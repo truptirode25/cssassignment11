@@ -1,10 +1,327 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <title>CSS</title>
+    <style>
+        body {
+            background-color: rgb(229, 231, 235);
+        }
+
+        .Container {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(229, 231, 235);
+            flex-wrap: wrap;
+        }
+
+        .item {
+            height: 380px;
+            width: 300px;
+            margin: 5px;
+            border: 1px solid rgb(238, 235, 232);
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .item:hover {
+            border: 1px solid rgb(206, 203, 203);
+
+        }
+
+        .main-image {
+            border-radius: 10px 10px 0px 0px;
+            margin-bottom: 5px;
+        }
+
+        .project-heading {
+            font-size: 23px;
+            font-weight: 900;
+            font-family: cursive;
+        }
+
+        .sub-container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .course-name {
+            background-color: rgb(179, 227, 246);
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: rgb(105, 105, 105);
+        }
+
+        .tech-stack {
+            display: flex;
+            margin: 2px;
+        }
+
+        .tech-1 {
+            background-color: rgb(243, 240, 239);
+            padding: 4px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(239, 114, 79);
+
+        }
+
+        .tech-2 {
+            background-color: rgb(216, 218, 221);
+            padding: 4px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(34, 94, 236);
+
+        }
+
+        .tech-3 {
+            background-color: rgb(211, 208, 208);
+            padding: 4px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(20, 1, 1);
+
+        }
+
+        .project-duration {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .project-duration-info {
+            font-size: 13px;
+        }
+
+        .user-profile-img {
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .project-duration-subinfo {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .calender-img {
+            margin-right: 5px;
+        }
+
+        .hr-line {
+            margin: 10px 0px;
+            border: gray 0.5 solid;
+        }
+
+        .additional {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .additional-sub-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .additional-sub-info-2 {
+            color: rgb(64, 127, 191);
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+
+        .tech-sub-1 {
+            background-color: rgb(225, 233, 233);
+            padding: 4px 16px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(112, 210, 230);
+
+        }
+
+        .tech-sub-2 {
+            background-color: rgb(238, 251, 236);
+            padding: 4px 16px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(65, 128, 68);
+
+        }
+
+        .tech-sub-3 {
+            background-color: rgb(211, 208, 208);
+            padding: 4px 16px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(20, 1, 1);
+
+        }
+
+
+        .tech-info-1 {
+            background-color: rgb(225, 233, 233);
+            padding: 4px 16px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(112, 210, 230);
+
+        }
+
+        .tech-info-2 {
+            background-color: rgb(238, 251, 236);
+            padding: 4px 16px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(65, 128, 68);
+
+        }
+
+        .tech-info-3 {
+            background-color: rgb(211, 208, 208);
+            padding: 4px 16px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            border: 1px solid rgb(20, 1, 1);
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="Container">
+        <div class="item">
+            <img src="C:\Users\dell\Pictures\Screenshots\roadtocode.png" width="300px" class="main-image" />
+            <div class="sub-container">
+                <span class="project-heading">Rode To Code</span><br />
+                <span class="course-name">Internship cohort program 14.0</span>
+                <p class="project-description">This project server as the foundation for an e-commerce website
+                    specializing in the sale of electronic gadgets. With..
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-1">HTML</span>
+                    <span class="tech-2">CSS</span>
+                    <span class="tech-3">GitHub</span>
+                </div>
+                <div class="project-duration">
+                    <div class="project-duration-subinfo">
+                        <img src="C:\Users\dell\Downloads\calendar.jpg" height="15px" class="calender-img" />
+                        <span class="project-duration-info">Apr 2024 - May 2025</span>
+                    </div>
+                    <div class="project-duration-subinfo">
+                        <image src="C:\Users\dell\Downloads\WhatsApp Image 2025-11-30 at 16.57.08 (1).jpeg" height="20px" class="user-profile-img" />
+                        <span class="project-duration-info">Trupti Rode</span>
+                    </div>
+                </div>
+                <hr class="hr-line" />
+                <div class="additional">
+                    <div class="additional-sub-info">
+                        <img src="C:\Users\dell\Downloads\deafult-clap.jpg" height="22px" />
+                        <span>900</span>
+                        <img src="C:\Users\dell\Downloads\comment.png" height="25px" />
+                        <span>2</span>
+                        <img src="C:\Users\dell\Downloads\share.webp" height="20px" />
+                    </div>
+                    <div>
+                        <span class="additional-sub-info-2"> See More -></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="item">
+            <img src="C:\Users\dell\Pictures\Screenshots\infoTechshop.png" width="300px" class="main-image" />
+            <div class="sub-container">
+                <span class="project-heading"> InfoTechshop</span><br />
+                <span class="couse-name">Internship cohort program 14.0</span>
+                <p class="project-description">This project server as the foundation for an e-commerce website
+                    specializing in the sale of electronic gadgets. With..
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-sub-1">Javascript</span>
+                    <span class="tech-sub-2">Nodejs</span>
+                    <span class="tech-sub-3">CSS</span>
+                </div>
+                <div class="project-duration">
+                    <div class="project-duration-subinfo">
+                        <img src="C:\Users\dell\Downloads\calendar.jpg" height="15px" class="calender-img" />
+                        <span class="project-duration-info">Apr 2024 - Apr 2025</span>
+                    </div>
+                    <div class="project-duration-subinfo">
+                        <image src="C:\Users\dell\Downloads\WhatsApp Image 2025-11-30 at 16.57.08 (2).jpeg" height="20px" class="user-profile-img" />
+                        <span class="project-duration-info">Trupti Rode</span>
+                    </div>
+                </div>
+                <hr class="hr-line" />
+                <div class="additional">
+                    <div class="additional-sub-info">
+                        <img src="C:\Users\dell\Downloads\deafult-clap.jpg" height="22px" />
+                        <span>750</span>
+                        <img src="C:\Users\dell\Downloads\comment.png" height="25px" />
+                        <span>5</span>
+                        <img src="C:\Users\dell\Downloads\share.webp" height="20px" />
+                    </div>
+                    <div>
+                        <span class="additional-sub-info-2"> See More -></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="C:\Users\dell\Pictures\Screenshots\spaceship.png" width="300px" height="140px" class="main-image" />
+            <div class="sub-container">
+                <span class="project-heading">Spaceship</span><br />
+                <span class="couse-name">Internship cohort program 14.0</span>
+                <p class="project-description">This project server as the foundation for an e-commerce website
+                    specializing in the sale of electronic gadgets. With..
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-info-1">Reactjs</span>
+                    <span class="tech-info-2">Html</span>
+                    <span class="tech-info-3">GitHub</span>
+                </div>
+                <div class="project-duration">
+                    <div class="project-duration-subinfo">
+                        <img src="C:\Users\dell\Downloads\calendar.jpg" height="15px" class="calender-img" />
+                        <span class="project-duration-info">Apr 2024 - Feb 2025</span>
+                    </div>
+                    <div class="project-duration-subinfo">
+                        <image src="C:\Users\dell\Downloads\WhatsApp Image 2025-11-30 at 16.57.08 (2).jpeg" height="20px" class="user-profile-img" />
+                        <span class="project-duration-info">Trupti Rode</span>
+                    </div>
+                </div>
+                <hr class="hr-line" />
+                <div class="additional">
+                    <div class="additional-sub-info">
+                        <img src="C:\Users\dell\Downloads\deafult-clap.jpg" height="22px" />
+                        <span>500</span>
+                        <img src="C:\Users\dell\Downloads\comment.png" height="25px" />
+                        <span>4</span>
+                        <img src="C:\Users\dell\Downloads\share.webp" height="20px" />
+                    </div>
+                    <div>
+                        <span class="additional-sub-info-2"> See More -></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
 </html>
